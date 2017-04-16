@@ -2,7 +2,6 @@ from copy import deepcopy
 
 from data_validator.exceptions import ValidatorException
 from data_validator.unexpected import Unexpected
-from data_validator.validators.base import BaseValidator
 
 
 class Validator:
@@ -86,7 +85,7 @@ class Validator:
 
         :param value: Value to validate
         :param validators: list of Validators objects
-        :type validators: list of BaseValidator
+        :type validators: list of data_validator.validators.base.BaseValidator
         :param throw_exception: If True exception will be thrown
         :type throw_exception: bool
         :param break_on_first_error: If True validation process will stop after first error 
